@@ -18,6 +18,10 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
+## This function checks to see if the matrix is square and then computes the inverse of the matrix 
+### returned by makeCacheMatrix above. 
+## If the inverse has already been calculated (and the matrix has not changed), then the cachesolve 
+## will retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
 
